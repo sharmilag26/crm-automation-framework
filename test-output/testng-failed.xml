@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields">
+      <class name="login.Tc003_Retest_TestCase">
         <methods>
-          <include name="tc001_VerifyuserisabletocreatecampaignwithMandatoryfields"/>
+          <include name="beforetest"/>
+          <include name="aftertest"/>
+          <include name="tc003_Retest_TestCase"/>
+          <include name="afterclass"/>
+          <include name="beforesuite"/>
+          <include name="aftermethod"/>
+          <include name="beforeclass"/>
+          <include name="aftersuite"/>
+          <include name="beforemethod"/>
         </methods>
-      </class> <!-- login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields -->
+      </class> <!-- login.Tc003_Retest_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

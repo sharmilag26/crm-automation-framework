@@ -1,8 +1,10 @@
 package org.campaign;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.ObjectRepository.CampaignPage;
+import com.ObjectRepository.CreateCampaignPage;
+import com.ObjectRepository.HomePage;
 import com.buisnessUtility.BaseClass;
 
 public class Tc002_Verifyuserisabletocreatecampaignwithallfields extends BaseClass{
@@ -10,50 +12,22 @@ public class Tc002_Verifyuserisabletocreatecampaignwithallfields extends BaseCla
 	@Test
 	public void test() throws InterruptedException {
 		
-		//to click on more button
-				driver.findElement(By.linkText("More")).click();
-				
-				//hard wait
-				Thread.sleep(2000);
-				
-				//to click on campaign Module
-				driver.findElement(By.name("Campaigns")).click();
-				
-				
-				//hard wait
-				Thread.sleep(2000);
-				
-				//to click on create campaign button
-				driver.findElement(By.cssSelector("[title=\'Create Campaign...']")).click();
-				
-				//hard wait
-				Thread.sleep(2000);
-						
-				//enter campaign name into campaign name textfield
-				driver.findElement(By.name("campaignname")).sendKeys("Camp_002");
-				
-				//hard wait
-				Thread.sleep(2000);
-						
-				//clear the data in textfield
-				driver.findElement(By.id("jscal_field_closingdate")).clear();
-				
-				//hard wait
-				Thread.sleep(2000);
-						
-				
-				//enetr closing date
-				driver.findElement(By.id("jscal_field_closingdate")).sendKeys("2026-09-15");
-				
-				//hard wait
-				Thread.sleep(2000);
-				
-				//enter target audience into target audience text field
-				driver.findElement(By.id("targetaudience")).sendKeys("Gents");
-						
-				
-				//click on save button
-				driver.findElement(By.name("button")).click();
-
-}
+		homepage = new HomePage(driver);
+		
+		homepage.getMoreButton();
+		
+		homepage.getCampaignModule();
+		
+		campaignpage = new CampaignPage(driver);
+		
+		campaignpage.getCreateCampaign();
+		
+		createcampaignpage = new CreateCampaignPage(driver);
+		
+		createcampaignpage.getCreateCampaign();
+		
+		createcampaignpage.ExpectedClosingDate();
+		
+		createcampaignpage.getSaveButton();
+	}
 }

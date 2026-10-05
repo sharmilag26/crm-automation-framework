@@ -1,62 +1,37 @@
 package org.campaign;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.ObjectRepository.CampaignPage;
+import com.ObjectRepository.CreateCampaignPage;
 import com.ObjectRepository.HomePage;
 import com.buisnessUtility.BaseClass;
 
 public class Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields extends BaseClass {
+
 	
 	@Test
 	public void test() throws InterruptedException {
 		
-	//to click on more button
-	driver.findElement(By.linkText("More")).click();
 	
-	//hard wait
-	Thread.sleep(2000);
-	
-	//to click on campaign Module
-	driver.findElement(By.name("Campaigns")).click();
-	
-	HomePage homepage = new HomePage(driver);
+	homepage = new HomePage(driver);
 	
 	homepage.getMoreButton();
 	
 	homepage.getCampaignModule();
 	
-	//hard wait
-	Thread.sleep(2000);
+	campaignpage = new CampaignPage(driver);
 	
-	//to click on create campaign button
-	driver.findElement(By.cssSelector("[title=\'Create Campaign...']")).click();
+	campaignpage.getCreateCampaign();
 	
-	//hard wait
-	Thread.sleep(2000);
-			
-	//enter campaign name into campaign name textfield
-	driver.findElement(By.name("campaignname")).sendKeys("Camp_002");
+	createcampaignpage = new CreateCampaignPage(driver);
 	
-	//hard wait
-	Thread.sleep(2000);
-			
-	//clear the data in textfield
-	driver.findElement(By.id("jscal_field_closingdate")).clear();
+	createcampaignpage.getCreateCampaign();
 	
-	//hard wait
-	Thread.sleep(2000);
-			
+	createcampaignpage.ExpectedClosingDate();
 	
-	//enetr closing date
-	driver.findElement(By.id("jscal_field_closingdate")).sendKeys("2026-09-15");
+	createcampaignpage.getSaveButton();
 	
-	//hard wait
-	Thread.sleep(2000);
-			
-	
-	//click on save button
-	driver.findElement(By.name("button")).click();
 	}
 
 }

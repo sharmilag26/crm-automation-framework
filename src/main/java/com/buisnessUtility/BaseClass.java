@@ -16,12 +16,36 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.GenericUtility.FileUtility;
+import com.GenericUtility.JavaUtility;
+import com.GenericUtility.WebDriverUtility;
+import com.ObjectRepository.CampaignPage;
+import com.ObjectRepository.ContactsPage;
+import com.ObjectRepository.CreateCampaignPage;
+import com.ObjectRepository.CreateContactPage;
+import com.ObjectRepository.CreateLeadsPage;
+import com.ObjectRepository.HomePage;
+import com.ObjectRepository.LeadsPage;
 import com.ObjectRepository.LoginPage;
 
 public class BaseClass {
 	
 	//driver initialization
 	public	WebDriver driver = null;
+	
+	//create object for Utility classes
+	public FileUtility futuil = new FileUtility();
+	public WebDriverUtility webutil = new WebDriverUtility();
+	public JavaUtility jutuil = new JavaUtility();
+	
+	//create object for POM class
+	public LoginPage loginpage;
+	public HomePage homepage;
+	public CampaignPage campaignpage;
+	public CreateCampaignPage createcampaignpage;
+	public ContactsPage contactspage;
+	public CreateContactPage createcontactspage;
+	public LeadsPage leadspage;
+	public CreateLeadsPage createleadspage;
 		
 		@BeforeSuite
 		public void beforesuite() {
@@ -40,8 +64,6 @@ public class BaseClass {
 		
 
 		@AfterTest
-		
-		
 		public void aftertest() {
 			Reporter.log("AfterTest - report backup",true);
 			}

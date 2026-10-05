@@ -19,9 +19,23 @@ public class HomePage {
 	@FindBy (linkText="Leads")
 	private WebElement LeadsModule;
 	
+	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
+	private WebElement ProfileButton;
+	
+	@FindBy (xpath="//a[text()='Sign Out']")
+	private WebElement SignOut;
+	
 	public HomePage(WebDriver driver) {
 		
 		PageFactory.initElements(driver,this);
+	}
+
+	public WebElement getProfileButton() {
+		return ProfileButton;
+	}
+
+	public WebElement getSignOut() {
+		return SignOut;
 	}
 
 	public WebElement getCampaignModule() {

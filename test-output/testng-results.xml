@@ -1,53 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results retried="3" ignored="3" total="7" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Login Successful]]>
+      <![CDATA[BeforeSuite - Database Connectivity Established]]>
+    </line>
+    <line>
+      <![CDATA[BeforeTest - report starts]]>
+    </line>
+    <line>
+      <![CDATA[BeforeClass - Launch Browser]]>
+    </line>
+    <line>
+      <![CDATA[BeforeMethod-Login to application ]]>
+    </line>
+    <line>
+      <![CDATA[Testcase executing...]]>
+    </line>
+    <line>
+      <![CDATA[AfterMethod-Logout to application ]]>
+    </line>
+    <line>
+      <![CDATA[BeforeMethod-Login to application ]]>
+    </line>
+    <line>
+      <![CDATA[Testcase executing...]]>
+    </line>
+    <line>
+      <![CDATA[Testcase executing...]]>
+    </line>
+    <line>
+      <![CDATA[Testcase executing...]]>
+    </line>
+    <line>
+      <![CDATA[AfterTest - report backup]]>
+    </line>
+    <line>
+      <![CDATA[BeforeSuite - Database Connectivity Terminated]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-09-09T11:57:26 IST" name="Default suite" finished-at="2026-09-09T11:57:41 IST" duration-ms="14187">
+  <suite started-at="2026-10-01T14:52:32 IST" name="Default suite" finished-at="2026-10-01T14:52:58 IST" duration-ms="26237">
     <groups>
     </groups>
-    <test started-at="2026-09-09T11:57:26 IST" name="Default test" finished-at="2026-09-09T11:57:41 IST" duration-ms="14187">
-      <class name="login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields">
-        <test-method signature="tc001_VerifyuserisabletocreatecampaignwithMandatoryfields()[pri:0, instance:login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields@4efbca5a]" started-at="2026-09-09T11:57:26 IST" name="tc001_VerifyuserisabletocreatecampaignwithMandatoryfields" finished-at="2026-09-09T11:57:41 IST" duration-ms="14095" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2026-10-01T14:52:32 IST" name="Default test" finished-at="2026-10-01T14:52:58 IST" duration-ms="26237">
+      <class name="login.Tc003_Retest_TestCase">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:32 IST" name="beforesuite" finished-at="2026-10-01T14:52:32 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeSuite - Database Connectivity Established]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:32 IST" name="beforetest" finished-at="2026-10-01T14:52:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeTest - report starts]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:32 IST" name="beforeclass" finished-at="2026-10-01T14:52:33 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeClass - Launch Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:33 IST" name="beforemethod" finished-at="2026-10-01T14:52:40 IST" duration-ms="6603" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeMethod-Login to application ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method retried="true" signature="tc003_Retest_TestCase()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:40 IST" name="tc003_Retest_TestCase" finished-at="2026-10-01T14:52:40 IST" duration-ms="16" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[title='Create Campaign...']"}
-  (Session info: chrome=152.0.7977.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f2314a0bb648645c8bd74c139be215f, findElement {using=css selector, value=[title='Create Campaign...']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\GOPI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49987}, goog:processID: 24688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49987/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f2314a0bb648645c8bd74c139be215f]]>
+              <![CDATA[expected [acc] but found [abc]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[title='Create Campaign...']"}
-  (Session info: chrome=152.0.7977.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f2314a0bb648645c8bd74c139be215f, findElement {using=css selector, value=[title='Create Campaign...']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\GOPI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49987}, goog:processID: 24688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49987/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f2314a0bb648645c8bd74c139be215f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields.tc001_VerifyuserisabletocreatecampaignwithMandatoryfields(Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields.java:103)
+              <![CDATA[java.lang.AssertionError: expected [acc] but found [abc]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at login.Tc003_Retest_TestCase.tc003_Retest_TestCase(Tc003_Retest_TestCase.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -76,14 +113,287 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase executing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc003_Retest_TestCase -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:40 IST" name="aftermethod" finished-at="2026-10-01T14:52:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterMethod-Logout to application ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:40 IST" name="beforemethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="17972" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=154.0.8037.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ea47bcdd8a4e7776dc0db99dd5785d3, findElement {value=user_name, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\GOPI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60505}, goog:processID: 4968, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60505/devtoo..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ea47bcdd8a4e7776dc0db99dd5785d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='user_name']"}
+  (Session info: chrome=154.0.8037.58)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3ea47bcdd8a4e7776dc0db99dd5785d3, findElement {value=user_name, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.58, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\GOPI\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60505}, goog:processID: 4968, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60505/devtoo..., se:cdpVersion: 154.0.8037.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3ea47bcdd8a4e7776dc0db99dd5785d3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+at com.ObjectRepository.LoginPage.login(LoginPage.java:44)
+at com.buisnessUtility.BaseClass.beforemethod(BaseClass.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[Login Successful]]>
+              <![CDATA[BeforeMethod-Login to application ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- tc001_VerifyuserisabletocreatecampaignwithMandatoryfields -->
-      </class> <!-- login.Tc001_VerifyuserisabletocreatecampaignwithMandatoryfields -->
+        </test-method> <!-- beforemethod -->
+        <test-method retried="true" signature="tc003_Retest_TestCase()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="tc003_Retest_TestCase" finished-at="2026-10-01T14:52:58 IST" duration-ms="3" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [acc] but found [abc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [acc] but found [abc]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at login.Tc003_Retest_TestCase.tc003_Retest_TestCase(Tc003_Retest_TestCase.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase executing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc003_Retest_TestCase -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="aftermethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="beforemethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method retried="true" signature="tc003_Retest_TestCase()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="tc003_Retest_TestCase" finished-at="2026-10-01T14:52:58 IST" duration-ms="3" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [acc] but found [abc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [acc] but found [abc]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at login.Tc003_Retest_TestCase.tc003_Retest_TestCase(Tc003_Retest_TestCase.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase executing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc003_Retest_TestCase -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="aftermethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="beforemethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="tc003_Retest_TestCase()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="tc003_Retest_TestCase" finished-at="2026-10-01T14:52:58 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [acc] but found [abc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [acc] but found [abc]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at login.Tc003_Retest_TestCase.tc003_Retest_TestCase(Tc003_Retest_TestCase.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Testcase executing...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc003_Retest_TestCase -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="aftermethod" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="afterclass" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="aftertest" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterTest - report backup]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:login.Tc003_Retest_TestCase@1573f9fc]" started-at="2026-10-01T14:52:58 IST" name="aftersuite" finished-at="2026-10-01T14:52:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeSuite - Database Connectivity Terminated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- login.Tc003_Retest_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
